@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block main %}
+    {% if messages %}
+    <div class="messageSuccesBlock">
+        <div class="alert alert-success">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    {% include 'addons/header.html' %}
+    <main>
+        <div class="partHead">
+            <h1>{% trans 'Xidmətlər' %}</h1>
+        </div>
+        <div class="servicePage">
+            <div class="servicesBlock">
+                {%  for service in services %}
+                    <div class="serviceCard">
+                        <a href="{% url 'servicedetail' service.slug %}">
+                            <div class="info">
+                                <p>{{service.name}}</p>
+                                <p class="desc">{{service.mini_desc}}</p>
+                                <div class="learnNow">
+                                    <p>{% trans 'Ətraflı oxu' %}</p>
+                                    <p class="arrow"><i class="bi bi-arrow-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="{{service.img}}">
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="seeAllServices">
+                <button type="button" class="seeAllServicesModalBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="img">
+                        <img src="{% static 'media/img3.png' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <p>{% trans 'Bütün xidmətlərə bax' %}</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iste quae a cumque eius odio rerum beatae sunt per.</p>
+                    </div>
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="modalsBody">
+                                    <div class="allServicesInModal">
+                                        <div class="headerServieNames">
+                                            <p>{% trans 'Bütün xidmətlər' %}</p>
+                                        </div>
+                                        {%  for service in services %}
+                                            <div class="name">
+                                                <a href="#">{{service.name}}</a>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                    <p class="line"></p>
+                                    <div class="formSide">
+                                        <div class="formHead">
+                                            <div class="headTxt">
+                                                <p>Xidmətlərimizdən yararlanmaq üçün geri bizə xəbər verin</p>
+                                                <p class="small">Geri dönüş üçün formu doldurun və ya <a href="#">əlaqə</a> bölməsindən bizimlə əlaqə saxlya bilərsiniz</p>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="form">
+                                            <form method="post">
+                                                {% csrf_token %}
+                                                <label for="id_full_name">{% trans 'Ad, Soyad' %}:</label>
+                                                {{ form.full_name }}
+                                                <label for="id_phone">{% trans 'Əlaqə nömrəsi' %}:</label>
+                                                {{ form.phone }}
+                                                <label for="id_email">{% trans 'E-poçt' %}:</label>
+                                                {{ form.email }}
+                                                <label for="id_message">{% trans 'Mətn' %}:</label>
+                                                {{ form.message }}
+                                                <button type="submit" class="btn btn-warning">{% trans 'Göndər' %}</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partHead">
+            <h1>{% trans 'Niyə biz?' %}</h1>
+        </div>
+        <div class="partHead">
+            <h1>{% trans 'Layhiələr' %}</h1>
+        </div>
+        <div class="projectsPage">
+            {% for project in projects %}
+                <div class="project">
+                    <a href="#">
+                        <div class="img">
+                            <img src="{{project.img}}" alt="">
+                        </div>
+                        <div class="info">
+                            <p>{{project.name}}</p>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+{% endblock %}

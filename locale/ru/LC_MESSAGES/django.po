@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-14 03:52+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\templates\addons\footer.html:12
+msgid "Saytın xərtiəsi"
+msgstr ""
+
+#: .\templates\addons\footer.html:13 .\templates\addons\nav.html:31
+msgid "Məqalələr"
+msgstr "Статьи"
+
+#: .\templates\addons\footer.html:14 .\templates\addons\nav.html:32
+#: .\templates\index.html:99
+msgid "Layhiələr"
+msgstr "Проекты"
+
+#: .\templates\addons\footer.html:15 .\templates\addons\nav.html:43
+msgid "Haqqımızda"
+msgstr "О нас"
+
+#: .\templates\addons\footer.html:16 .\templates\addons\nav.html:35
+#: .\templates\index.html:17
+msgid "Xidmətlər"
+msgstr "Услуги"
+
+#: .\templates\addons\footer.html:19
+msgid "Qaydalar və şərtlər"
+msgstr ""
+
+#: .\templates\addons\footer.html:20
+msgid "Şərtlərimiz"
+msgstr ""
+
+#: .\templates\addons\footer.html:21
+msgid "Şikayət və təkliflər"
+msgstr ""
+
+#: .\templates\addons\footer.html:24 .\templates\addons\header.html:16
+#: .\templates\addons\nav.html:44
+msgid "Əlaqə"
+msgstr "Контакт"
+
+#: .\templates\addons\footer.html:25
+msgid "Bizimlə əlaqə"
+msgstr ""
+
+#: .\templates\addons\footer.html:26
+msgid "Vakansiyalar"
+msgstr ""
+
+#: .\templates\addons\footer.html:27
+msgid "Korporativ satışlar"
+msgstr ""
+
+#: .\templates\addons\footer.html:37
+msgid "Bütün hüquqlar Synergo MMC tərəfindən qorunur"
+msgstr ""
+
+#: .\templates\addons\header.html:15
+msgid "Ətraflı"
+msgstr "Подробнее"
+
+#: .\templates\addons\nav.html:10
+msgid "İşıqlı"
+msgstr "Светлый"
+
+#: .\templates\addons\nav.html:11
+msgid "Qaranlıq"
+msgstr "Темный"
+
+#: .\templates\faq.html:18 .\templates\index.html:76
+msgid "Ad, Soyad"
+msgstr "Имя, Фамилия"
+
+#: .\templates\faq.html:20 .\templates\index.html:78
+msgid "Əlaqə nömrəsi"
+msgstr "Контактный номер"
+
+#: .\templates\faq.html:22 .\templates\index.html:80
+msgid "E-poçt"
+msgstr "Электронная почта"
+
+#: .\templates\faq.html:24 .\templates\index.html:82
+msgid "Mətn"
+msgstr "Текст"
+
+#: .\templates\faq.html:26 .\templates\index.html:84
+msgid "Göndər"
+msgstr "Отправить"
+
+#: .\templates\index.html:28
+msgid "Ətraflı oxu"
+msgstr "Подробнее"
+
+#: .\templates\index.html:45
+msgid "Bütün xidmətlərə bax"
+msgstr "Посмотреть все услуги"
+
+#: .\templates\index.html:56
+msgid "Bütün xidmətlər"
+msgstr "Все услуги"
+
+#: .\templates\index.html:96
+msgid "Niyə biz?"
+msgstr ""
+
+#: .\templates\post.html:9
+msgid "Əsas səhifə"
+msgstr ""
+
+#: .\templates\post.html:26
+msgid "Paylaş"
+msgstr ""

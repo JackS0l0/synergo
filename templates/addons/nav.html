@@ -1,0 +1,47 @@
+{% load static %}
+{% load i18n %}
+<div class="navbarBlock">
+    <div class="float0">
+        <div class="div">+994 55 644 91 64</div>
+        <div class="settings">
+            <div class="darkMode">
+                <label for="filter" class="switch" aria-label="Toggle Filter">
+                    <input type="checkbox" id="filter" />
+                    <span>{% trans 'İşıqlı' %}</span>
+                    <span>{% trans 'Qaranlıq' %}</span>
+                </label>
+            </div>
+            <div class="lang">
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'set-language' 'az' %}">Azərbaycanca</a></li>
+                        <li><a class="dropdown-item" href="{% url 'set-language' 'en' %}">English</a></li>
+                        <li><a class="dropdown-item" href="{% url 'set-language' 'ru' %}">Русский</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="float1">
+        <div class="logo">
+            <a href="{% url 'home' %}"><img src="https://res.cloudinary.com/dyjcv3dos/image/upload/f_auto,q_auto/bqv5avvudblp16w4uspp">Synergo</a>
+        </div>
+        <div class="menu">
+            <a href="#">{% trans 'Məqalələr' %}</a>
+            <a href="#">{% trans 'Layhiələr' %}</a>
+            <div class="services">
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Xidmətlər' %}</button>
+                    <ul class="dropdown-menu">
+                        {% for service in services %}
+                            <li><a class="dropdown-item" href="#">{{service.name}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <a href="#">{% trans 'Haqqımızda' %}</a>
+            <a href="#" class="btn goldenbtn">{% trans 'Əlaqə' %}</a>
+        </div>
+    </div>
+</div>

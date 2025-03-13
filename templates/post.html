@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block main %}
+    <main>
+        <div class="navWays">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'home' %}">{% trans 'Əsas səhifə' %}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{object.name}}</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="postPage">
+            <div class="postHead">
+                <img src="{{object.img}}">
+                <div class="name">
+                    <p>{{object.name}}</p>
+                </div>
+            </div>
+            <div class="postBody">
+                <p>{{object.desc | safe}}</p>
+            </div>
+            <hr>
+            <div class="shareBlock">
+                <p>{% trans 'Paylaş' %}</p>
+                <div class="shareIn">
+                    <a href="#"><i class="bi bi-telegram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

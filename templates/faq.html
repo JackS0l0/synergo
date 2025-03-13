@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block main %}
+    <main>
+        <div class="faqPage">
+            {% if messages %}
+                <div class="alert alert-success">
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <div class="form">
+                <div class="form">
+                    <form method="post">
+                        {% csrf_token %}
+                        <label for="id_full_name">{% trans 'Ad, Soyad' %}:</label>
+                        {{ form.full_name }}
+                        <label for="id_phone">{% trans 'Əlaqə nömrəsi' %}:</label>
+                        {{ form.phone }}
+                        <label for="id_email">{% trans 'E-poçt' %}:</label>
+                        {{ form.email }}
+                        <label for="id_message">{% trans 'Mətn' %}:</label>
+                        {{ form.message }}
+                        <button type="submit" class="btn btn-warning">{% trans 'Göndər' %}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

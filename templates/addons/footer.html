@@ -1,0 +1,39 @@
+{% load static %}
+{% load i18n %}
+<footer>
+    <div class="floor1">
+        <div class="logo">
+            <a href="{% url 'home' %}">
+                <img src="https://res.cloudinary.com/dyjcv3dos/image/upload/f_auto,q_auto/bqv5avvudblp16w4uspp">
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ducimus debitis optio quod aliquam, in tempore ratione</p>
+        </div>
+        <div class="box">
+            <p>{% trans 'Saytın xərtiəsi' %}</p>
+            <a href="#">{% trans 'Məqalələr' %}</a>
+            <a href="#">{% trans 'Layhiələr' %}</a>
+            <a href="#">{% trans 'Haqqımızda' %}</a>
+            <a href="#">{% trans 'Xidmətlər' %}</a>
+        </div>
+        <div class="box">
+            <p>{% trans 'Qaydalar və şərtlər' %}</p>
+            <a href="#">{% trans 'Şərtlərimiz' %}</a>
+            <a href="{% url 'faqpage' %}">{% trans 'Şikayət və təkliflər' %}</a>
+        </div>
+        <div class="box">
+            <p>{% trans 'Əlaqə' %}</p>
+            <a href="#">{% trans 'Bizimlə əlaqə' %}</a>
+            <a href="#">{% trans 'Vakansiyalar' %}</a>
+            <a href="#">{% trans 'Korporativ satışlar' %}</a>
+            <div class="socialIcons">
+                <a href="#"><i class="bi bi-telegram"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="floor0">
+        <p>{% trans 'Bütün hüquqlar Synergo MMC tərəfindən qorunur' %} - &copy; {% now "Y" %}</p>
+    </div>
+</footer>

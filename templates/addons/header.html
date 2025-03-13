@@ -1,0 +1,23 @@
+{% load static %}
+{% load i18n %}
+<header>
+    <div class="headerSlider">
+        {% for banner in servicesInBanner %}
+            {% if banner.banner %}
+                <div>
+                    <div class="img">
+                        <img src="{{ banner.img }}">
+                    </div>
+                    <div class="info">
+                        <h1>{{ banner.name }}</h1>
+                        <p>{{ banner.mini_desc |safe }}</p>
+                        <div class="btnsBox">
+                            <a href="{% url 'servicedetail' banner.slug %}" class="btn">{% trans 'Ətraflı' %}</a>
+                            <a href="#" class="btn goldenbtn">{% trans 'Əlaqə' %}</a>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</header>
