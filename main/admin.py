@@ -1,6 +1,11 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
 from .models import ContactMessage,Services,Projects,WhyWe
+from import_export.admin import ExportMixin
+from import_export import resources
+class ContactMessageResource(resources.ModelResource):
+    class Meta:
+        model = ContactMessage
 @admin.register(WhyWe)
 class WhyWeControl(TranslationAdmin):
     group_fieldsets = True  
@@ -40,7 +45,8 @@ class ServicesControl(TranslationAdmin):
             'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
         }
 @admin.register(ContactMessage)
-class ContactMessageControl(admin.ModelAdmin):
+class ContactMessageControl(ExportMixin, admin.ModelAdmin):
+    resource_class = ContactMessageResource
     list_display = ['full_name','created_at','complated']
     readonly_fields = ["full_name", "phone", "email", "message", "created_at"]
     search_fields = ['full_name']
