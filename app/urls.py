@@ -12,6 +12,7 @@ urlpatterns = [
     path('',mainviews.index,name='home'),
     path('service/<str:slug>/',mainviews.ServiceDetail.as_view(),name='servicedetail'),
     path('faq/',mainviews.faqPage,name='faqpage'),
+    path('vacancies/',mainviews.vacancy,name='jobpage'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns = [
     *i18n_patterns(*urlpatterns, prefix_default_language=False),

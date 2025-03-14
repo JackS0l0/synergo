@@ -22,7 +22,7 @@ msgstr ""
 
 #: .\templates\addons\footer.html:12
 msgid "Saytın xərtiəsi"
-msgstr ""
+msgstr "Карта сайта"
 
 #: .\templates\addons\footer.html:13 .\templates\addons\nav.html:31
 msgid "Məqalələr"
@@ -44,15 +44,15 @@ msgstr "Услуги"
 
 #: .\templates\addons\footer.html:19
 msgid "Qaydalar və şərtlər"
-msgstr ""
+msgstr "Условия и положения"
 
 #: .\templates\addons\footer.html:20
 msgid "Şərtlərimiz"
-msgstr ""
+msgstr "Наши правила"
 
 #: .\templates\addons\footer.html:21
 msgid "Şikayət və təkliflər"
-msgstr ""
+msgstr "Жалобы и предложения"
 
 #: .\templates\addons\footer.html:24 .\templates\addons\header.html:16
 #: .\templates\addons\nav.html:44
@@ -61,19 +61,19 @@ msgstr "Контакт"
 
 #: .\templates\addons\footer.html:25
 msgid "Bizimlə əlaqə"
-msgstr ""
+msgstr "Связаться с нами"
 
 #: .\templates\addons\footer.html:26
 msgid "Vakansiyalar"
-msgstr ""
+msgstr "Вакансии"
 
 #: .\templates\addons\footer.html:27
 msgid "Korporativ satışlar"
-msgstr ""
+msgstr "Корпоративные продажи"
 
 #: .\templates\addons\footer.html:37
 msgid "Bütün hüquqlar Synergo MMC tərəfindən qorunur"
-msgstr ""
+msgstr "Все права защищены ООО «Синерго»."
 
 #: .\templates\addons\header.html:15
 msgid "Ətraflı"
@@ -121,12 +121,12 @@ msgstr "Все услуги"
 
 #: .\templates\index.html:96
 msgid "Niyə biz?"
-msgstr ""
+msgstr "Почему мы?"
 
 #: .\templates\post.html:9
 msgid "Əsas səhifə"
-msgstr ""
+msgstr "Домашняя страница"
 
 #: .\templates\post.html:26
 msgid "Paylaş"
-msgstr ""
+msgstr "Поделись"

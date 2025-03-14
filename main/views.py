@@ -66,7 +66,6 @@ def faqPage(request):
         if form.is_valid():
             form.save()
             full_name = form.cleaned_data.get("full_name", "Naməlum")
-            # phone
             phone = form.cleaned_data.get("phone", "Naməlum")
             email = form.cleaned_data.get("email", "Naməlum")
             message_text = form.cleaned_data.get("message", "")
@@ -99,3 +98,9 @@ def set_language(request, language):
     else:
         response = HttpResponseRedirect("/")
     return response
+def vacancy(request):
+    data={
+        'title':'Synergo - Vacancies',
+        'services':Services.objects.all().order_by('-date'),
+    }
+    return render(request,'job.html',data)
