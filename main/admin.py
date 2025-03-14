@@ -1,8 +1,9 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
-from .models import ContactMessage,Services,Projects,WhyWe
+from .models import ContactMessage,Services,Projects,WhyWe,Resume
 from import_export.admin import ExportMixin
 from import_export import resources
+admin.site.register(Resume)
 class ContactMessageResource(resources.ModelResource):
     class Meta:
         model = ContactMessage

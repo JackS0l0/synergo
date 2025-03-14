@@ -1,11 +1,11 @@
 import os
 import requests
-from .forms import ContactForm
+from .forms import ContactForm,CVForm
 from django.conf import settings
 from urllib.parse import urlparse
 from django.contrib import messages
 from django.utils import translation
-from .models import Services,Projects
+from .models import Services,Projects,Resume
 from django.views.generic import DetailView
 from django.shortcuts import render,redirect
 from django.http import HttpResponseRedirect
@@ -99,6 +99,13 @@ def set_language(request, language):
         response = HttpResponseRedirect("/")
     return response
 def vacancy(request):
+    if request.method == 'POST':
+        form = CVForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+    else:
+        form = CVForm()
     data={
         'title':'Synergo - Vacancies',
         'services':Services.objects.all().order_by('-date'),

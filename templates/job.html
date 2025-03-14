@@ -18,26 +18,35 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="modalForm">
-                                        <form method="post">
+                                        <form method="POST" enctype="multipart/form-data">
                                             {% csrf_token %}
-                                            <label for="id_full_name">{% trans 'Ad, Soyad' %}:</label>
-                                            {{ form.full_name }}
-                                            <label for="id_phone">{% trans 'Əlaqə nömrəsi' %}:</label>
-                                            {{ form.phone }}
-                                            <label for="id_email">{% trans 'E-poçt' %}:</label>
-                                            {{ form.email }}
-                                            <label for="id_message">{% trans 'Mətn' %}:</label>
-                                            {{ form.message }}
-                                            <label for="id_message">{% trans 'CV' %}:</label>
-                                            <input type="file" name="" id="">
-                                            <button type="submit" class="btn btn-warning">{% trans 'Göndər' %}</button>
+                                            <div>
+                                                <label for="full_name">Ad, Soyad:</label>
+                                                <input type="text" id="full_name" name="full_name" required>
+                                            </div>
+                                            
+                                            <div>
+                                                <label for="email">E-poçt:</label>
+                                                <input type="email" id="email" name="email" required>
+                                            </div>
+                                            
+                                            <div>
+                                                <label for="phone">Telefon Nömrəsi:</label>
+                                                <input type="text" id="phone" name="phone" required>
+                                            </div>
+                                            
+                                            <div>
+                                                <label for="cv_file">CV Faylı (PDF, DOCX):</label>
+                                                <input type="file" id="cv_file" name="cv_file" accept=".pdf,.docx" required>
+                                            </div>
+                                            <button type="submit">Göndər</button>
                                         </form>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
+                                <!-- <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                     <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
