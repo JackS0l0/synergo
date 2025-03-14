@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1hpr^lgy6pp-n4-u-dko(96_f(@-(vr+@417bh3l2y+b2a*pa*'
@@ -140,3 +142,6 @@ JAZZMIN_SETTINGS = {
     "changeform_format": "horizontal_tabs",
     "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
 }
+load_dotenv()
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
