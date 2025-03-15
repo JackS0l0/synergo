@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-14 03:52+0400\n"
+"POT-Creation-Date: 2025-03-15 18:18+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgstr ""
 msgid "Qaranlıq"
 msgstr ""
 
-#: .\templates\faq.html:18 .\templates\index.html:76
+#: .\templates\faq.html:18 .\templates\index.html:76 .\templates\job.html:24
 msgid "Ad, Soyad"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr ""
 msgid "Əlaqə nömrəsi"
 msgstr ""
 
-#: .\templates\faq.html:22 .\templates\index.html:80
+#: .\templates\faq.html:22 .\templates\index.html:80 .\templates\job.html:28
 msgid "E-poçt"
 msgstr ""
 
@@ -119,6 +119,34 @@ msgstr ""
 
 #: .\templates\index.html:96
 msgid "Niyə biz?"
+msgstr ""
+
+#: .\templates\job.html:8
+msgid "Karyeranızı sağlam mühitdə və peşəkar komanda ilə qurun!"
+msgstr ""
+
+#: .\templates\job.html:9
+msgid ""
+"Hazırda şirkətimizdə sahənizə və ya təcrübənizə uyğun vakansiya tapa "
+"bilmədinizsə, gələcəkdə yaranacaq vakansiyalarda dəyərləndirilməyiniz üçün "
+"qeydiyyatdan keçərək məlumatlarınızı namizəd bazamıza daxil edə bilərsiniz."
+msgstr ""
+
+#: .\templates\job.html:11 .\templates\job.html:16 .\templates\job.html:62
+#: .\templates\job.html:67
+msgid "CV-ni bazaya daxil et"
+msgstr ""
+
+#: .\templates\job.html:32
+msgid "Telefon Nömrəsi"
+msgstr ""
+
+#: .\templates\job.html:37
+msgid "CV Faylı"
+msgstr ""
+
+#: .\templates\job.html:50
+msgid "Aktiv vakansiyalar"
 msgstr ""
 
 #: .\templates\post.html:9
