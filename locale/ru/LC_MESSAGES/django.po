@@ -145,8 +145,6 @@ msgid "CV Faylı"
 msgstr "Файл резюме"
 
 #: .\templates\job.html:50
-#, fuzzy
-#| msgid "Vakansiyalar"
 msgid "Aktiv vakansiyalar"
 msgstr "Вакансии"
 
