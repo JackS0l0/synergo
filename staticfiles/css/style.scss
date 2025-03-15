@@ -283,6 +283,47 @@ body{
     }
     main{
         min-height: 100vh;
+        .vacanciesPage{
+            margin: 2vw 5vw;
+            .vacanciesHead{
+                display: flex;
+                margin: 0 15vw;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .first{
+                    font-size: 2.5vw;
+                }
+                .second{
+                    font-size: 1.4vw;
+                }
+                .resumeBlock{
+                    margin: 2vw 0;
+                    .modal{
+                        .modal-dialog{
+                            .modal-content{
+                                .modal-body{
+                                    .modalForm{
+                                        form{
+                                            display: flex;
+                                            flex-direction: column;
+                                            div{
+                                                display: flex;
+                                                margin: 0.5vw 0;
+                                                flex-direction: column;
+                                                label{
+                                                    text-align: start;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .navWays{
             margin: 0 0 2vw 10vw;
         }
@@ -415,6 +456,7 @@ body{
                                     }
                                     .line{
                                         border-right: 0.1vw solid rgba(255, 255, 255, 1);
+                                        margin: 0 5vw;
                                     }
                                     .formSide{
                                         display: flex;
@@ -422,10 +464,16 @@ body{
                                         flex-direction: column;
                                         .formHead{
                                             display: flex;
+                                            align-items: start;
                                             .headTxt{
                                                 margin-right: 2vw;
                                                 display: flex;
                                                 flex-direction: column;
+                                            }
+                                            .btn{
+                                                i{
+                                                    color: white;
+                                                }
                                             }
                                         }
                                         .form{

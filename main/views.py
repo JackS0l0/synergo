@@ -5,7 +5,7 @@ from django.conf import settings
 from urllib.parse import urlparse
 from django.contrib import messages
 from django.utils import translation
-from .models import Services,Projects,Resume
+from .models import Services,Projects,Resume,Vacancy
 from django.views.generic import DetailView
 from django.shortcuts import render,redirect
 from django.http import HttpResponseRedirect
@@ -109,5 +109,8 @@ def vacancy(request):
     data={
         'title':'Synergo - Vacancies',
         'services':Services.objects.all().order_by('-date'),
+        'form':form,
+        'vacancies':Vacancy.objects.all().order_by('-date'),
+        'resume':Resume.objects.all(),
     }
     return render(request,'job.html',data)

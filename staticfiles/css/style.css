@@ -252,6 +252,37 @@ body header .headerSlider div .info .btnsBox .goldenbtn {
 body main {
   min-height: 100vh;
 }
+body main .vacanciesPage {
+  margin: 2vw 5vw;
+}
+body main .vacanciesPage .vacanciesHead {
+  display: flex;
+  margin: 0 15vw;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main .vacanciesPage .vacanciesHead .first {
+  font-size: 2.5vw;
+}
+body main .vacanciesPage .vacanciesHead .second {
+  font-size: 1.4vw;
+}
+body main .vacanciesPage .vacanciesHead .resumeBlock {
+  margin: 2vw 0;
+}
+body main .vacanciesPage .vacanciesHead .resumeBlock .modal .modal-dialog .modal-content .modal-body .modalForm form {
+  display: flex;
+  flex-direction: column;
+}
+body main .vacanciesPage .vacanciesHead .resumeBlock .modal .modal-dialog .modal-content .modal-body .modalForm form div {
+  display: flex;
+  margin: 0.5vw 0;
+  flex-direction: column;
+}
+body main .vacanciesPage .vacanciesHead .resumeBlock .modal .modal-dialog .modal-content .modal-body .modalForm form div label {
+  text-align: start;
+}
 body main .navWays {
   margin: 0 0 2vw 10vw;
 }
@@ -378,6 +409,7 @@ body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .moda
 }
 body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .line {
   border-right: 0.1vw solid rgb(255, 255, 255);
+  margin: 0 5vw;
 }
 body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide {
   display: flex;
@@ -386,11 +418,15 @@ body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .moda
 }
 body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide .formHead {
   display: flex;
+  align-items: start;
 }
 body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide .formHead .headTxt {
   margin-right: 2vw;
   display: flex;
   flex-direction: column;
+}
+body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide .formHead .btn i {
+  color: white;
 }
 body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide .form {
   margin-top: 1vw;

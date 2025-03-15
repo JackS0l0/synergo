@@ -1,9 +1,13 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
-from .models import ContactMessage,Services,Projects,WhyWe,Resume
+from .models import ContactMessage,Services,Projects,WhyWe,Resume,Vacancy
 from import_export.admin import ExportMixin
 from import_export import resources
-admin.site.register(Resume)
+@admin.register(Resume)
+class ResumeControl(admin.ModelAdmin):
+    list_display=['full_name','date']
+    def has_change_permission(self, request, obj=None):
+        return False
 class ContactMessageResource(resources.ModelResource):
     class Meta:
         model = ContactMessage
@@ -58,3 +62,17 @@ class ContactMessageControl(ExportMixin, admin.ModelAdmin):
         return False  # Yeni mesaj əlavə edilə bilməz
     def has_delete_permission(self, request, obj=None):
         return True  # Silməyə icazə veririk
+@admin.register(Vacancy)
+class VacancyControl(TranslationAdmin):
+    list_display=['name','date']
+    search_fields=['name']
+    group_fieldsets = True  
+    class Media:
+        js = (
+            'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
+            'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js',
+            'modeltranslation/js/tabbed_translation_fields.js',
+        )
+        css = {
+            'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
+        }

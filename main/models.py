@@ -53,5 +53,18 @@ class Resume(models.Model):
     email = models.EmailField()
     phone = models.CharField(max_length=20)
     cv_file = models.FileField(upload_to='cv_files/')
+    date=models.DateTimeField('Tarix',default=timezone.now)
     def __str__(self):
         return self.full_name
+    class Meta:
+        verbose_name = 'CV'
+        verbose_name_plural = 'CV-lər'
+class Vacancy(models.Model):
+    name=models.CharField('Vakansiyanın adı',max_length=200,default='none')
+    desc=RichTextField('Məzmun',default='none')
+    date=models.DateTimeField('Tarix',default=timezone.now)
+    def __str__(self):
+        return self.name
+    class Meta:
+        verbose_name = 'Vakansiya'
+        verbose_name_plural = 'Vakansiyalar'

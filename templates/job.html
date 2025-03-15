@@ -5,15 +5,15 @@
     <main>
         <div class="vacanciesPage">
             <div class="vacanciesHead">
-                <p>{% trans 'Karyeranızı sağlam mühitdə və peşəkar komanda ilə qurun!' %}</p>
-                <p>{% trans 'Hazırda şirkətimizdə sahənizə və ya təcrübənizə uyğun vakansiya tapa bilmədinizsə, gələcəkdə yaranacaq vakansiyalarda dəyərləndirilməyiniz üçün qeydiyyatdan keçərək məlumatlarınızı namizəd bazamıza daxil edə bilərsiniz.' %}</p>
+                <p class="first">{% trans 'Karyeranızı sağlam mühitdə və peşəkar komanda ilə qurun!' %}</p>
+                <p class="second">{% trans 'Hazırda şirkətimizdə sahənizə və ya təcrübənizə uyğun vakansiya tapa bilmədinizsə, gələcəkdə yaranacaq vakansiyalarda dəyərləndirilməyiniz üçün qeydiyyatdan keçərək məlumatlarınızı namizəd bazamıza daxil edə bilərsiniz.' %}</p>
                 <div class="resumeBlock">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">CV-ni bazaya daxil et</button>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">{% trans 'CV-ni bazaya daxil et' %}</button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">{% trans 'CV-ni bazaya daxil et' %}</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -43,13 +43,63 @@
                                         </form>
                                     </div>
                                 </div>
-                                <!-- <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div> -->
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="activeVacancies">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    {% for vacancy in vacancies %}
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne{{vacancy.id}}" aria-expanded="false" aria-controls="flush-collapseOne{{vacancy.id}}">{{vacancy.name}}</button>
+                            </h2>
+                            <div id="flush-collapseOne{{vacancy.id}}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">{{vacancy.desc | safe}}</div>
+                                <div class="btnSubmit">
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">{% trans 'CV-ni bazaya daxil et' %}</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">{% trans 'CV-ni bazaya daxil et' %}</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modalForm">
+                                        <form method="POST" enctype="multipart/form-data">
+                                            {% csrf_token %}
+                                            <div>
+                                                <label for="full_name">Ad, Soyad:</label>
+                                                <input type="text" id="full_name" name="full_name" required>
+                                            </div>
+                                            
+                                            <div>
+                                                <label for="email">E-poçt:</label>
+                                                <input type="email" id="email" name="email" required>
+                                            </div>
+                                            
+                                            <div>
+                                                <label for="phone">Telefon Nömrəsi:</label>
+                                                <input type="text" id="phone" name="phone" required>
+                                            </div>
+                                            
+                                            <div>
+                                                <label for="cv_file">CV Faylı (PDF, DOCX):</label>
+                                                <input type="file" id="cv_file" name="cv_file" accept=".pdf,.docx" required>
+                                            </div>
+                                            <button type="submit">Göndər</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
