@@ -123,27 +123,24 @@ msgstr "Why us?"
 
 #: .\templates\job.html:8
 msgid "Karyeranızı sağlam mühitdə və peşəkar komanda ilə qurun!"
-msgstr ""
+msgstr "Build your career in a healthy environment and with a professional team!"
 
 #: .\templates\job.html:9
-msgid ""
-"Hazırda şirkətimizdə sahənizə və ya təcrübənizə uyğun vakansiya tapa "
-"bilmədinizsə, gələcəkdə yaranacaq vakansiyalarda dəyərləndirilməyiniz üçün "
-"qeydiyyatdan keçərək məlumatlarınızı namizəd bazamıza daxil edə bilərsiniz."
-msgstr ""
+msgid "Hazırda şirkətimizdə sahənizə və ya təcrübənizə uyğun vakansiya tapa bilmədinizsə, gələcəkdə yaranacaq vakansiyalarda dəyərləndirilməyiniz üçün qeydiyyatdan keçərək məlumatlarınızı namizəd bazamıza daxil edə bilərsiniz."
+msgstr "If you are currently unable to find a vacancy in our company that matches your field or experience, you can register and enter your information into our candidate database to be considered for future vacancies."
 
 #: .\templates\job.html:11 .\templates\job.html:16 .\templates\job.html:62
 #: .\templates\job.html:67
 msgid "CV-ni bazaya daxil et"
-msgstr ""
+msgstr "Submit your CV to the database"
 
 #: .\templates\job.html:32
 msgid "Telefon Nömrəsi"
-msgstr ""
+msgstr "Phone number"
 
 #: .\templates\job.html:37
 msgid "CV Faylı"
-msgstr ""
+msgstr "CV File"
 
 #: .\templates\job.html:50
 #, fuzzy
