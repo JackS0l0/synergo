@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-15 18:18+0400\n"
+"POT-Creation-Date: 2025-03-16 15:47+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Məqalələr"
 msgstr "Articles"
 
 #: .\templates\addons\footer.html:14 .\templates\addons\nav.html:32
-#: .\templates\index.html:99
+#: .\templates\index.html:112
 msgid "Layhiələr"
 msgstr "Projects"
 
@@ -53,7 +53,7 @@ msgid "Şikayət və təkliflər"
 msgstr "Complaints and suggestions"
 
 #: .\templates\addons\footer.html:24 .\templates\addons\header.html:16
-#: .\templates\addons\nav.html:44
+#: .\templates\addons\nav.html:44 .\templates\contact.html:10
 msgid "Əlaqə"
 msgstr "Contact"
 
@@ -85,25 +85,42 @@ msgstr "Light mode"
 msgid "Qaranlıq"
 msgstr "Dark mode"
 
-#: .\templates\faq.html:18 .\templates\index.html:76 .\templates\job.html:24
+#: .\templates\contact.html:9 .\templates\post.html:9
+msgid "Əsas səhifə"
+msgstr "Home page"
+
+#: .\templates\contact.html:16
+msgid "Əlaqə məlumatları"
+msgstr "Contact information"
+
+#: .\templates\contact.html:37 .\templates\faq.html:22
+#: .\templates\index.html:76 .\templates\job.html:24
 msgid "Ad, Soyad"
 msgstr "Name, Surname"
 
-#: .\templates\faq.html:20 .\templates\index.html:78
+#: .\templates\contact.html:41 .\templates\faq.html:26
+#: .\templates\index.html:78
 msgid "Əlaqə nömrəsi"
 msgstr "Phone number"
 
-#: .\templates\faq.html:22 .\templates\index.html:80 .\templates\job.html:28
+#: .\templates\contact.html:45 .\templates\faq.html:30
+#: .\templates\index.html:80 .\templates\job.html:28
 msgid "E-poçt"
 msgstr "E-mail"
 
-#: .\templates\faq.html:24 .\templates\index.html:82
+#: .\templates\contact.html:49 .\templates\faq.html:34
+#: .\templates\index.html:82
 msgid "Mətn"
 msgstr "Text"
 
-#: .\templates\faq.html:26 .\templates\index.html:84
+#: .\templates\contact.html:52 .\templates\faq.html:37
+#: .\templates\index.html:84
 msgid "Göndər"
 msgstr "Send"
+
+#: .\templates\faq.html:8
+msgid "Təklif və Şikayətlərinizi bizə mütləq bildirin, sizin fikriniz bizim üçün önəmlidir"
+msgstr "Be sure to let us know your suggestions and complaints, your opinion is important to us"
 
 #: .\templates\index.html:28
 msgid "Ətraflı oxu"
@@ -123,11 +140,18 @@ msgstr "Why us?"
 
 #: .\templates\job.html:8
 msgid "Karyeranızı sağlam mühitdə və peşəkar komanda ilə qurun!"
-msgstr "Build your career in a healthy environment and with a professional team!"
+msgstr ""
+"Build your career in a healthy environment and with a professional team!"
 
 #: .\templates\job.html:9
-msgid "Hazırda şirkətimizdə sahənizə və ya təcrübənizə uyğun vakansiya tapa bilmədinizsə, gələcəkdə yaranacaq vakansiyalarda dəyərləndirilməyiniz üçün qeydiyyatdan keçərək məlumatlarınızı namizəd bazamıza daxil edə bilərsiniz."
-msgstr "If you are currently unable to find a vacancy in our company that matches your field or experience, you can register and enter your information into our candidate database to be considered for future vacancies."
+msgid ""
+"Hazırda şirkətimizdə sahənizə və ya təcrübənizə uyğun vakansiya tapa "
+"bilmədinizsə, gələcəkdə yaranacaq vakansiyalarda dəyərləndirilməyiniz üçün "
+"qeydiyyatdan keçərək məlumatlarınızı namizəd bazamıza daxil edə bilərsiniz."
+msgstr ""
+"If you are currently unable to find a vacancy in our company that matches "
+"your field or experience, you can register and enter your information into "
+"our candidate database to be considered for future vacancies."
 
 #: .\templates\job.html:11 .\templates\job.html:16 .\templates\job.html:62
 #: .\templates\job.html:67
@@ -145,10 +169,6 @@ msgstr "CV File"
 #: .\templates\job.html:50
 msgid "Aktiv vakansiyalar"
 msgstr "Vacancies"
-
-#: .\templates\post.html:9
-msgid "Əsas səhifə"
-msgstr "Home page"
 
 #: .\templates\post.html:26
 msgid "Paylaş"

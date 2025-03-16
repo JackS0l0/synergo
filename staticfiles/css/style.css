@@ -28,6 +28,25 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+body #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 3vw;
+  right: 1.5vw;
+  z-index: 99;
+  font-size: 2vw;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 4vw;
+  height: 4vw;
+}
 body .messageSuccesBlock {
   display: flex;
   justify-content: center;
@@ -343,6 +362,71 @@ body header .headerSlider div .info .btnsBox .goldenbtn {
 body main {
   min-height: 100vh;
 }
+body main .contactPage {
+  margin: 2vw 5vw;
+}
+body main .contactPage .contactHead {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+body main .contactPage .infoBlock {
+  display: flex;
+  justify-content: space-between;
+}
+body main .contactPage .infoBlock .contactInfo {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+}
+body main .contactPage .infoBlock .contactInfo a {
+  margin-bottom: 1vw;
+}
+body main .contactPage .infoBlock .contactInfo a i {
+  margin-right: 0.5vw;
+}
+body main .contactPage .infoBlock .contactInfo .socialIcons {
+  margin: 1vw 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  font-size: 2vw;
+  row-gap: 1vw;
+}
+body main .contactPage .infoBlock .form {
+  width: 30vw;
+}
+body main .contactPage .infoBlock .form form {
+  display: flex;
+  flex-direction: column;
+}
+body main .contactPage .infoBlock .form form div {
+  display: flex;
+  flex-direction: column;
+}
+body main .contactPage .infoBlock .form form div input {
+  border-radius: 0.5vw;
+  padding: 0.5vw 1vw;
+  border: 0;
+  outline: none;
+}
+body main .contactPage .infoBlock .form form div textarea {
+  border-radius: 0.5vw;
+  padding: 0.5vw 1vw;
+  border: 0;
+  outline: none;
+}
+body main .contactPage .infoBlock .form form button {
+  margin-top: 1vw;
+}
+body main .contactPage .map {
+  margin: 1vw 0;
+}
+body main .contactPage .map iframe {
+  width: 100%;
+  height: 20vw;
+  border-radius: 1vw;
+  border: 0.1vw solid rgb(30, 30, 30);
+}
 body main .whyMeBlock {
   margin: 2vw 5vw;
   display: grid;
@@ -355,7 +439,7 @@ body main .whyMeBlock .box {
   flex-direction: column;
   align-items: center;
 }
-body main .whyMeBlock .box .img img {
+body main .whyMeBlock .box .img {
   background: rgba(30, 30, 30, 0.2);
   border-radius: 100%;
   padding: 0.5vw;
@@ -363,8 +447,11 @@ body main .whyMeBlock .box .img img {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+body main .whyMeBlock .box .img img {
   width: 10vw;
   height: 10vw;
+  transition: 1s;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -372,6 +459,9 @@ body main .whyMeBlock .box .info {
   margin-top: 0.5vw;
   font-weight: bold;
   text-align: center;
+}
+body main .whyMeBlock .box:hover .img img {
+  transform: scale(1.2);
 }
 body main .faqPage {
   margin: 2vw 5vw;
@@ -460,8 +550,11 @@ body main .vacanciesPage .vacanciesHead .resumeBlock .modal .modal-dialog .modal
 body main .vacanciesPage .activeVacancies .accordion .accordion-item .accordion-collapse .accordion-body .btnSubmit {
   margin: 1vw 0 1vw 0;
 }
-body main .navWays {
+body main .navWaysForPost {
   margin: 0 0 2vw 10vw;
+}
+body main .navWays {
+  margin: 0 0 2vw 5vw;
 }
 body main .postPage {
   margin: 2vw 10vw;
@@ -743,6 +836,7 @@ body footer {
   background-size: cover;
   background-position: top;
   color: white;
+  border-top: 0.1vw solid rgb(255, 255, 255);
 }
 body footer a {
   color: white;
@@ -823,6 +917,18 @@ body footer .floor0 {
   border-color: goldenrod;
   color: goldenrod;
 }
+.dark-mode main .navWaysForPost .breadcrumb .active {
+  color: rgba(255, 255, 255, 0.5);
+}
+.dark-mode main .navWaysForPost .breadcrumb .breadcrumb-item::before {
+  color: white;
+}
+.dark-mode main .navWays .breadcrumb .active {
+  color: rgba(255, 255, 255, 0.5);
+}
+.dark-mode main .navWays .breadcrumb .breadcrumb-item::before {
+  color: white;
+}
 .dark-mode main .whyMeBlock .box {
   color: goldenrod;
 }
@@ -841,4 +947,7 @@ body footer .floor0 {
 }
 .dark-mode main .servicePage .servicesBlock .serviceCard:hover a {
   color: white;
+}
+.dark-mode footer {
+  border-top: 0.1vw solid rgb(255, 255, 255);
 }/*# sourceMappingURL=style.css.map */

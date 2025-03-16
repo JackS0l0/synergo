@@ -107,22 +107,24 @@
                 </div>
             {% endfor %}
         </div>
-        <div class="partHead">
-            <h1>{% trans 'Layhiələr' %}</h1>
-        </div>
-        <div class="projectsPage">
-            {% for project in projects %}
-                <div class="project">
-                    <a href="#">
-                        <div class="img">
-                            <img src="{{project.img}}" alt="">
-                        </div>
-                        <div class="info">
-                            <p>{{project.name}}</p>
-                        </div>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
+        {% if projects %}
+            <div class="partHead">
+                <h1>{% trans 'Layhiələr' %}</h1>
+            </div>
+            <div class="projectsPage">
+                {% for project in projects %}
+                    <div class="project">
+                        <a href="#">
+                            <div class="img">
+                                <img src="{{project.img}}" alt="">
+                            </div>
+                            <div class="info">
+                                <p>{{project.name}}</p>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
     </main>
 {% endblock %}

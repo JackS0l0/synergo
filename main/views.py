@@ -115,8 +115,23 @@ def vacancy(request):
     }
     return render(request,'job.html',data)
 def contact(request):
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            full_name = form.cleaned_data.get("full_name", "Naməlum")
+            phone = form.cleaned_data.get("phone", "Naməlum")
+            email = form.cleaned_data.get("email", "Naməlum")
+            message_text = form.cleaned_data.get("message", "")
+            telegram_message = f"📩 Yeni Mesaj!\n\n👤 Ad: {full_name}\n📧 Email: {email}\n📱 Telefon: {phone}\n💬 Mesaj: {message_text}"
+            send_telegram_message(telegram_message)
+            messages.success(request, "Mesajınız uğurla göndərildi!")
+            return redirect('/')
+    else:
+        form = ContactForm()
     data={
         'title':'Synergo - Contact',
         'services':Services.objects.all().order_by('-date'),
+        'form':form,
     }
     return render(request,'contact.html',data)

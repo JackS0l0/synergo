@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-15 18:18+0400\n"
+"POT-Creation-Date: 2025-03-16 15:47+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Məqalələr"
 msgstr ""
 
 #: .\templates\addons\footer.html:14 .\templates\addons\nav.html:32
-#: .\templates\index.html:99
+#: .\templates\index.html:112
 msgid "Layhiələr"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgid "Şikayət və təkliflər"
 msgstr ""
 
 #: .\templates\addons\footer.html:24 .\templates\addons\header.html:16
-#: .\templates\addons\nav.html:44
+#: .\templates\addons\nav.html:44 .\templates\contact.html:10
 msgid "Əlaqə"
 msgstr ""
 
@@ -85,24 +85,43 @@ msgstr ""
 msgid "Qaranlıq"
 msgstr ""
 
-#: .\templates\faq.html:18 .\templates\index.html:76 .\templates\job.html:24
+#: .\templates\contact.html:9 .\templates\post.html:9
+msgid "Əsas səhifə"
+msgstr ""
+
+#: .\templates\contact.html:16
+msgid "Əlaqə məlumatları"
+msgstr ""
+
+#: .\templates\contact.html:37 .\templates\faq.html:22
+#: .\templates\index.html:76 .\templates\job.html:24
 msgid "Ad, Soyad"
 msgstr ""
 
-#: .\templates\faq.html:20 .\templates\index.html:78
+#: .\templates\contact.html:41 .\templates\faq.html:26
+#: .\templates\index.html:78
 msgid "Əlaqə nömrəsi"
 msgstr ""
 
-#: .\templates\faq.html:22 .\templates\index.html:80 .\templates\job.html:28
+#: .\templates\contact.html:45 .\templates\faq.html:30
+#: .\templates\index.html:80 .\templates\job.html:28
 msgid "E-poçt"
 msgstr ""
 
-#: .\templates\faq.html:24 .\templates\index.html:82
+#: .\templates\contact.html:49 .\templates\faq.html:34
+#: .\templates\index.html:82
 msgid "Mətn"
 msgstr ""
 
-#: .\templates\faq.html:26 .\templates\index.html:84
+#: .\templates\contact.html:52 .\templates\faq.html:37
+#: .\templates\index.html:84
 msgid "Göndər"
+msgstr ""
+
+#: .\templates\faq.html:8
+msgid ""
+"Təklif və Şikayətlərinizi bizə mütləq bildirin, sizin fikriniz bizim üçün "
+"önəmlidir"
 msgstr ""
 
 #: .\templates\index.html:28
@@ -147,10 +166,6 @@ msgstr ""
 
 #: .\templates\job.html:50
 msgid "Aktiv vakansiyalar"
-msgstr ""
-
-#: .\templates\post.html:9
-msgid "Əsas səhifə"
 msgstr ""
 
 #: .\templates\post.html:26
