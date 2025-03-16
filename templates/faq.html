@@ -4,6 +4,9 @@
 {% block main %}
     <main>
         <div class="faqPage">
+            <div class="fagHead">
+                <h1>{% trans 'Təklif və Şikayətlərinizi bizə mütləq bildirin, sizin fikriniz bizim üçün önəmlidir' %}</h1>
+            </div>
             {% if messages %}
                 <div class="alert alert-success">
                     {% for message in messages %}
@@ -15,14 +18,22 @@
                 <div class="form">
                     <form method="post">
                         {% csrf_token %}
-                        <label for="id_full_name">{% trans 'Ad, Soyad' %}:</label>
-                        {{ form.full_name }}
-                        <label for="id_phone">{% trans 'Əlaqə nömrəsi' %}:</label>
-                        {{ form.phone }}
-                        <label for="id_email">{% trans 'E-poçt' %}:</label>
-                        {{ form.email }}
-                        <label for="id_message">{% trans 'Mətn' %}:</label>
-                        {{ form.message }}
+                        <div>
+                            <label for="id_full_name">{% trans 'Ad, Soyad' %}:</label>
+                            {{ form.full_name }}
+                        </div>
+                        <div>
+                            <label for="id_phone">{% trans 'Əlaqə nömrəsi' %}:</label>
+                            {{ form.phone }}
+                        </div>
+                        <div>
+                            <label for="id_email">{% trans 'E-poçt' %}:</label>
+                            {{ form.email }}
+                        </div>
+                        <div>
+                            <label for="id_message">{% trans 'Mətn' %}:</label>
+                            {{ form.message }}
+                        </div>
                         <button type="submit" class="btn btn-warning">{% trans 'Göndər' %}</button>
                     </form>
                 </div>

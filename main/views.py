@@ -5,7 +5,7 @@ from django.conf import settings
 from urllib.parse import urlparse
 from django.contrib import messages
 from django.utils import translation
-from .models import Services,Projects,Resume,Vacancy
+from .models import Services,Projects,Resume,Vacancy,WhyWe
 from django.views.generic import DetailView
 from django.shortcuts import render,redirect
 from django.http import HttpResponseRedirect
@@ -33,7 +33,6 @@ def index(request):
         if form.is_valid():
             form.save()
             full_name = form.cleaned_data.get("full_name", "Naməlum")
-            # phone
             phone = form.cleaned_data.get("phone", "Naməlum")
             email = form.cleaned_data.get("email", "Naməlum")
             message_text = form.cleaned_data.get("message", "")
@@ -49,6 +48,7 @@ def index(request):
         'servicesInBanner':Services.objects.all().order_by('-date'),
         'services':Services.objects.all().order_by('-date')[0:6],
         'projects':Projects.objects.all().order_by('-date')[0:8],
+        'whyWe':WhyWe.objects.all().order_by('-date')[0:5],
     }
     return render(request, 'index.html', data)
 class ServiceDetail(DetailView):
@@ -114,3 +114,9 @@ def vacancy(request):
         'resume':Resume.objects.all(),
     }
     return render(request,'job.html',data)
+def contact(request):
+    data={
+        'title':'Synergo - Contact',
+        'services':Services.objects.all().order_by('-date'),
+    }
+    return render(request,'contact.html',data)

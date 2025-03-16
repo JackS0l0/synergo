@@ -391,6 +391,79 @@ body{
     }
     main{
         min-height: 100vh;
+        .whyMeBlock{
+            margin: 2vw 5vw;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            justify-content: space-between;
+            .box{
+                width: 15vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .img{
+                    img{
+                        background: rgba(30, 30, 30, 0.2);
+                        border-radius: 100%;
+                        padding: 0.5vw;
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(5px);
+                        -webkit-backdrop-filter: blur(5px);
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                        width: 10vw;
+                        height: 10vw;
+                        object-fit: cover;
+                    }
+                }
+                .info{
+                    margin-top: 0.5vw;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+        .faqPage{
+            margin: 2vw 5vw;
+            .fagHead{
+                display: flex;
+                justify-content: center;
+                h1{
+                    text-align: center;
+                    width: 65vw;
+                }
+                margin-bottom: 2vw;
+            }
+            .form{
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 1vw;
+                        input{
+                            width: 30vw;
+                            padding: 0.5vw 1vw;
+                            outline: none;
+                            border-radius: 0.5vw;
+                            border: 0.1vw solid rgb(30,30,30);
+                        }
+                        textarea{
+                            width: 30vw;
+                            padding: 0.5vw 1vw;
+                            outline: none;
+                            border-radius: 0.5vw;
+                            border: 0.1vw solid rgb(30,30,30);
+                        }
+                    }
+                    button{
+                        margin-top: 2vw;
+                        width: 30vw;
+                    }
+                }
+            }
+        }
         .vacanciesPage{
             margin: 2vw 5vw;
             .vacanciesHead{
@@ -869,6 +942,16 @@ body{
         }
     }
     main{
+        .whyMeBlock{
+            .box{
+                color: goldenrod;
+                .img{
+                    img{
+                        background: rgba(255, 255, 255, 0.2);
+                    }
+                }
+            }
+        }
         .projectsPage{
             .project{
                 background: rgb(30,30,30);

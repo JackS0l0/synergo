@@ -47,7 +47,6 @@ class WhyWe(models.Model):
     class Meta:
         verbose_name = 'Xüsusiyyət'
         verbose_name_plural = 'Xüsusiyyətlər'
-
 class Resume(models.Model):
     full_name = models.CharField(max_length=255)
     email = models.EmailField()

@@ -95,6 +95,18 @@
         <div class="partHead">
             <h1>{% trans 'Niyə biz?' %}</h1>
         </div>
+        <div class="whyMeBlock">
+            {% for post in whyWe %}
+                <div class="box">
+                    <div class="img">
+                        <img src="{{post.img}}">
+                    </div>
+                    <div class="info">
+                        <p>{{post.name}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
         <div class="partHead">
             <h1>{% trans 'Layhiələr' %}</h1>
         </div>
