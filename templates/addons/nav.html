@@ -2,7 +2,11 @@
 {% load i18n %}
 <div class="navbarBlock">
     <div class="float0">
-        <div class="div">+994 55 644 91 64</div>
+        <div class="callnow">
+            <a href="tel:+994556449164">
+                <img src="https://res.cloudinary.com/dyjcv3dos/image/upload/f_auto,q_auto/ubopimbjstoezeuljbkm">
+            </a>
+        </div>
         <div class="settings">
             <div class="darkMode">
                 <label for="filter" class="switch" aria-label="Toggle Filter">
@@ -35,7 +39,7 @@
                     <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Xidmətlər' %}</button>
                     <ul class="dropdown-menu">
                         {% for service in services %}
-                            <li><a class="dropdown-item" href="#">{{service.name}}</a></li>
+                            <li><a class="dropdown-item" href="{% url 'servicedetail' service.slug %}">{{service.name}}</a></li>
                         {% endfor %}
                     </ul>
                 </div>

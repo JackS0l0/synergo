@@ -46,7 +46,8 @@ def index(request):
         'title':'Synerge',
         'form':form,
         'servicesInBanner':Services.objects.all().order_by('-date'),
-        'services':Services.objects.all().order_by('-date')[0:6],
+        'services':Services.objects.all().order_by('-date'),
+        'servicesInMain':Services.objects.all().order_by('-date')[0:6],
         'projects':Projects.objects.all().order_by('-date')[0:8],
         'whyWe':WhyWe.objects.all().order_by('-date')[0:5],
     }

@@ -18,7 +18,7 @@
         </div>
         <div class="servicePage">
             <div class="servicesBlock">
-                {%  for service in services %}
+                {%  for service in servicesInMain %}
                     <div class="serviceCard">
                         <a href="{% url 'servicedetail' service.slug %}">
                             <div class="info">

@@ -173,6 +173,9 @@ body .navbarBlock .float0 {
   align-items: center;
   justify-content: space-between;
 }
+body .navbarBlock .float0 .callnow a img {
+  width: 20vw;
+}
 body .navbarBlock .float0 .settings {
   display: grid;
   grid-template-columns: auto auto;
@@ -932,7 +935,7 @@ body footer .floor0 {
 .dark-mode main .whyMeBlock .box {
   color: goldenrod;
 }
-.dark-mode main .whyMeBlock .box .img img {
+.dark-mode main .whyMeBlock .box .img {
   background: rgba(255, 255, 255, 0.2);
 }
 .dark-mode main .projectsPage .project {

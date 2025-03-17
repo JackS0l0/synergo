@@ -199,6 +199,13 @@ body{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            .callnow{
+                a{
+                    img{
+                        width: 20vw;
+                    }
+                }
+            }
             .settings{
                 display: grid;
                 grid-template-columns: auto auto;
@@ -1062,9 +1069,7 @@ body{
             .box{
                 color: goldenrod;
                 .img{
-                    img{
-                        background: rgba(255, 255, 255, 0.2);
-                    }
+                    background: rgba(255, 255, 255, 0.2);
                 }
             }
         }
