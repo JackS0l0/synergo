@@ -1,20 +1,19 @@
 // DarkMode
 document.addEventListener("DOMContentLoaded", function () {
-    const toggleSwitch = document.getElementById("filter");
-    if (localStorage.getItem("darkMode") === "enabled") {
-        document.body.classList.add("dark-mode");
-        toggleSwitch.checked = true;
+    let desktopSwitch = document.getElementById("filter-desktop");
+    let mobileSwitch = document.getElementById("filter-mobile");
+    function syncSwitches(source, target) {
+        target.checked = source.checked;
+        document.body.classList.toggle("dark-mode", source.checked);
     }
-    toggleSwitch.addEventListener("change", function () {
-        if (this.checked) {
-            document.body.classList.add("dark-mode");
-            localStorage.setItem("darkMode", "enabled"); // Seçimi yadda saxla
-        } else {
-            document.body.classList.remove("dark-mode");
-            localStorage.setItem("darkMode", "disabled"); // Seçimi yadda saxla
-        }
+    desktopSwitch.addEventListener("change", function () {
+        syncSwitches(desktopSwitch, mobileSwitch);
+    });
+    mobileSwitch.addEventListener("change", function () {
+        syncSwitches(mobileSwitch, desktopSwitch);
     });
 });
+
 // headerSlider
 $('.headerSlider').slick({
     slidesToShow: 1,
