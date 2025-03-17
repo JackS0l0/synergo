@@ -953,4 +953,53 @@ body footer .floor0 {
 }
 .dark-mode footer {
   border-top: 0.1vw solid rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 1001px) {
+  body .navbarBlock .float1 .menuForPhone {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body .navbarBlock .float0 {
+    display: none;
+  }
+  body .navbarBlock .float1 {
+    margin: 5vw 0;
+  }
+  body .navbarBlock .float1 .logo a {
+    font-size: 8vw;
+  }
+  body .navbarBlock .float1 .logo a img {
+    width: 10vw;
+  }
+  body .navbarBlock .float1 .menu {
+    display: none;
+  }
+  body .navbarBlock .float1 .menuForPhone .btn img {
+    width: 8vw;
+  }
+  body .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-header button {
+    font-size: 4vw;
+  }
+  body header .headerSlider div {
+    height: auto;
+  }
+  body header .headerSlider div .img img {
+    height: 40vh;
+  }
+  body header .headerSlider div .info {
+    padding: 0 5vw;
+    width: 100%;
+    font-size: 3vw;
+  }
+  body header .headerSlider div .info .btnsBox .btn {
+    font-size: 4vw;
+    margin: 5vw 5vw 0 0;
+  }
 }/*# sourceMappingURL=style.css.map */
