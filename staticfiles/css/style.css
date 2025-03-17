@@ -995,26 +995,35 @@ body footer .floor0 {
   body .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-header button {
     font-size: 4vw;
   }
+  body .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-body .allMenu .settingsfloor .darkMode {
+    font-size: 4vw;
+    /* switch slider */
+    /* switch bg color */
+    /* switch hover & focus */
+    /* switch hover */
+    /* checked - move slider to right */
+    /* checked - set opacity */
+  }
   body .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-body .allMenu .settingsfloor .darkMode .switch {
     --_switch-bg-clr: #70a9c5;
-    --_switch-padding: 0.3vw;
-    --_slider-bg-clr: rgba(12, 74, 110, 0.65);
-    --_slider-bg-clr-on: rgba(12, 74, 110, 1);
+    --_switch-padding: 4px; /* padding around button*/
+    --_slider-bg-clr: rgba(12, 74, 110, 0.65); /* slider color unchecked */
+    --_slider-bg-clr-on: rgba(12, 74, 110, 1); /* slider color checked */
     --_slider-txt-clr: #ffffff;
-    --_label-padding: 0.4vw 1vw;
+    --_label-padding: 1rem 2rem; /* padding around the labels -  this gives the switch it's global width and height */
     --_switch-easing: cubic-bezier(
     0.47,
     1.64,
     0.41,
     0.8
-    );
+    ); /* easing on toggle switch */
     color: white;
     width: -moz-fit-content;
     width: fit-content;
     display: flex;
     justify-content: center;
     position: relative;
-    border-radius: 20vw;
+    border-radius: 9999px;
     cursor: pointer;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
