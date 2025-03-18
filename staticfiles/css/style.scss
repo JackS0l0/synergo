@@ -618,6 +618,28 @@ body{
                 }
             }
         }
+        .whyMeBlockMob{
+            div{
+                .box{
+                    .img{
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: 45vw;
+                            height: 20vh;
+                            object-fit: cover;
+                        }
+                    }
+                    .info{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 4vw;
+                        margin: 1vw 0 0 0;
+                    }
+                }
+            }
+        }
         .whyMeBlock{
             margin: 2vw 5vw;
             display: grid;
@@ -1410,6 +1432,9 @@ body{
                         }
                     }
                 }
+            }
+            .whyMeBlock{
+                display: none;
             }
         }
     }

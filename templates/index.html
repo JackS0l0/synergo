@@ -107,6 +107,20 @@
                 </div>
             {% endfor %}
         </div>
+        <div class="whyMeBlockMob">
+            {% for post in whyWe %}
+                <div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="{{post.img}}">
+                        </div>
+                        <div class="info">
+                            <p>{{post.name}}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
         {% if projects %}
             <div class="partHead">
                 <h1>{% trans 'Layhiələr' %}</h1>

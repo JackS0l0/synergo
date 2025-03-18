@@ -550,6 +550,23 @@ body main .contactPage .map iframe {
   border-radius: 1vw;
   border: 0.1vw solid rgb(30, 30, 30);
 }
+body main .whyMeBlockMob div .box .img {
+  display: flex;
+  justify-content: center;
+}
+body main .whyMeBlockMob div .box .img img {
+  width: 45vw;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .whyMeBlockMob div .box .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  margin: 1vw 0 0 0;
+}
 body main .whyMeBlock {
   margin: 2vw 5vw;
   display: grid;
@@ -1200,5 +1217,8 @@ body footer .floor0 {
   }
   body main .servicePage .seeAllServices .seeAllServicesModalBtn .text p:first-child {
     font-size: 4vw;
+  }
+  body main .whyMeBlock {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

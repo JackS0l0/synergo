@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         syncSwitches(mobileSwitch, desktopSwitch);
     });
 });
-
 // headerSlider
 $('.headerSlider').slick({
     slidesToShow: 1,
@@ -40,3 +39,15 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+// whyMeBlockMob
+$('.whyMeBlockMob').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    dots: false,
+    arrows: false,
+    speed:5000,
+    pauseOnHover: false,
+});
