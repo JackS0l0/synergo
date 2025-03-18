@@ -1340,6 +1340,31 @@ body{
                 .seeAllServices{
                     width: 100%;
                     margin: 2vw 0;
+                    .modal{
+                        .modal-dialog{
+                            .modal-content{
+                                .modal-body{
+                                    .modalsBody{
+                                        font-size: 4vw;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        .allServicesInModal{
+                                            display: none;
+                                        }
+                                        .formSide{
+                                            width: 100%;
+                                            .form{
+                                                form{
+                                                    justify-content: center;
+                                                    grid-template-columns: auto;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     .seeAllServicesModalBtn{
                         width: 100%;
                         .img{

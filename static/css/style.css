@@ -1146,6 +1146,21 @@ body footer .floor0 {
     width: 100%;
     margin: 2vw 0;
   }
+  body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody {
+    font-size: 4vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .allServicesInModal {
+    display: none;
+  }
+  body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide {
+    width: 100%;
+  }
+  body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide .form form {
+    justify-content: center;
+    grid-template-columns: auto;
+  }
   body main .servicePage .seeAllServices .seeAllServicesModalBtn {
     width: 100%;
   }
