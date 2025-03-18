@@ -556,7 +556,7 @@ body main .whyMeBlockMob div .box .img {
 }
 body main .whyMeBlockMob div .box .img img {
   width: 45vw;
-  height: 20vh;
+  height: 25vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
