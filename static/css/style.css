@@ -1113,6 +1113,9 @@ body footer .floor0 {
   body .navbarBlock .float1 .menuForPhone {
     display: none;
   }
+  body main .whyMeBlockMob {
+    display: none;
+  }
 }
 @media screen and (max-width: 1000px) {
   body #myBtn {
