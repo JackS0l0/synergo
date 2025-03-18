@@ -342,7 +342,11 @@ body .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-header {
   align-items: center;
 }
 body .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-header button {
-  font-size: 4vw;
+  font-size: 6vw;
+}
+body .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-body .allMenu .settingsfloor {
+  display: flex;
+  justify-content: center;
 }
 body .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-body .allMenu .settingsfloor .darkMode {
   font-size: 4vw;
@@ -1028,6 +1032,23 @@ body footer .floor0 {
 .dark-mode .navbarBlock .float0 .settings .darkMode .switch::before {
   background-color: gold !important;
 }
+.dark-mode .navbarBlock .float1 .menuForPhone .offcanvas .btn {
+  color: white;
+}
+.dark-mode .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-header .btn i {
+  color: white;
+}
+.dark-mode .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-body .allMenu .darkMode .switch {
+  background: rgb(30, 30, 30) !important;
+  --_switch-bg-clr: rgb(30,30,30) !important;
+  color: rgb(30, 30, 30);
+}
+.dark-mode .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-body .allMenu .darkMode .switch::after {
+  background-color: goldenrod;
+}
+.dark-mode .navbarBlock .float1 .menuForPhone .offcanvas .offcanvas-body .allMenu .darkMode .switch::before {
+  background-color: gold !important;
+}
 .dark-mode .navbarBlock .float1 .menu .services .dropdown button {
   color: white;
 }
@@ -1106,5 +1127,43 @@ body footer .floor0 {
   body header .headerSlider div .info .btnsBox .btn {
     font-size: 4vw;
     margin: 5vw 5vw 0 0;
+  }
+  body main .servicePage {
+    flex-direction: column;
+  }
+  body main .servicePage .servicesBlock {
+    grid-template-columns: auto;
+  }
+  body main .servicePage .servicesBlock .serviceCard {
+    width: 100%;
+    font-size: 3vw;
+  }
+  body main .servicePage .servicesBlock .serviceCard a .img img {
+    width: 35vw;
+    height: 25vw;
+  }
+  body main .servicePage .seeAllServices {
+    width: 100%;
+    margin: 2vw 0;
+  }
+  body main .servicePage .seeAllServices .seeAllServicesModalBtn {
+    width: 100%;
+  }
+  body main .servicePage .seeAllServices .seeAllServicesModalBtn .img img {
+    width: 100%;
+  }
+  body main .servicePage .seeAllServices .seeAllServicesModalBtn .text {
+    font-size: 3vw;
+    top: 0;
+    padding: 1vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  body main .servicePage .seeAllServices .seeAllServicesModalBtn .text p {
+    text-align: center !important;
+  }
+  body main .servicePage .seeAllServices .seeAllServicesModalBtn .text p:first-child {
+    font-size: 4vw;
   }
 }/*# sourceMappingURL=style.css.map */

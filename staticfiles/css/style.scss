@@ -390,12 +390,14 @@ body{
                         justify-content: space-between;
                         align-items: center;
                         button{
-                            font-size: 4vw;
+                            font-size: 6vw;
                         }
                     }
                     .offcanvas-body{
                         .allMenu{
                             .settingsfloor{
+                                display: flex;
+                                justify-content: center;
                                 .darkMode{
                                     font-size: 4vw;
                                     .switch {
@@ -1162,6 +1164,37 @@ body{
             }
         }
         .float1{
+            .menuForPhone{
+                .offcanvas{
+                    .btn{
+                        color: white;
+                    }
+                    .offcanvas-header{
+                        .btn{
+                            i{
+                                color: white;
+                            }
+                        }
+                    }
+                    .offcanvas-body{
+                        .allMenu{
+                            .darkMode{
+                                .switch{
+                                    background: rgb(30,30,30) !important; 
+                                    --_switch-bg-clr: rgb(30,30,30) !important;
+                                    color: rgb(30,30,30);
+                                }
+                                .switch::after{
+                                    background-color: goldenrod;
+                                }
+                                .switch::before{
+                                    background-color: gold !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .menu{
                 .services{
                     .dropdown{
@@ -1280,6 +1313,52 @@ body{
                             .btn{
                                 font-size: 4vw;
                                 margin: 5vw 5vw 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            .servicePage{
+                flex-direction: column;
+                .servicesBlock{
+                    grid-template-columns: auto;
+                    .serviceCard{
+                        width: 100%;
+                        font-size: 3vw;
+                        a{
+                            .img{
+                                img{
+                                    width: 35vw;
+                                    height: 25vw;
+                                }
+                            }
+                        }
+                    }
+                }
+                .seeAllServices{
+                    width: 100%;
+                    margin: 2vw 0;
+                    .seeAllServicesModalBtn{
+                        width: 100%;
+                        .img{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .text{
+                            font-size: 3vw;
+                            top:0;
+                            padding: 1vw;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            p{
+                                text-align: center !important;
+                            }
+                            p:first-child{
+                                font-size: 4vw;
                             }
                         }
                     }
