@@ -745,6 +745,7 @@ body main .postPage .postHead img {
 body main .postPage .postHead .name {
   position: absolute;
   display: flex;
+  text-align: center;
   justify-content: center;
   color: white;
   top: 0;
