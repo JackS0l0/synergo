@@ -1299,6 +1299,11 @@ body{
 }
 @media screen and (max-width: 1000px) {
     body{
+        #myBtn{
+            width: 10vw;
+            height: 10vw;
+            font-size: 5vw;
+        }
         .navbarBlock{
             .float0{
                 display: none;
@@ -1435,6 +1440,14 @@ body{
             }
             .whyMeBlock{
                 display: none;
+            }
+        }
+        footer{
+            .floor1{
+                display: none;
+            }
+            .floor0{
+                text-align: center;
             }
         }
     }

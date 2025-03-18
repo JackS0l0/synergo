@@ -1115,6 +1115,11 @@ body footer .floor0 {
   }
 }
 @media screen and (max-width: 1000px) {
+  body #myBtn {
+    width: 10vw;
+    height: 10vw;
+    font-size: 5vw;
+  }
   body .navbarBlock .float0 {
     display: none;
   }
@@ -1220,5 +1225,11 @@ body footer .floor0 {
   }
   body main .whyMeBlock {
     display: none;
+  }
+  body footer .floor1 {
+    display: none;
+  }
+  body footer .floor0 {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
