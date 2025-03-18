@@ -329,6 +329,7 @@ body .navbarBlock .float1 .menuForPhone .btn img {
   width: 8vw;
 }
 body .navbarBlock .float1 .menuForPhone .offcanvas {
+  width: 100%;
   background-color: red;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -1152,6 +1153,58 @@ body footer .floor0 {
   body header .headerSlider div .info .btnsBox .btn {
     font-size: 4vw;
     margin: 5vw 5vw 0 0;
+  }
+  body main .contactPage .infoBlock {
+    flex-direction: column;
+    font-size: 4vw;
+  }
+  body main .contactPage .infoBlock .contactInfo {
+    width: 100%;
+  }
+  body main .contactPage .infoBlock .form {
+    width: 100%;
+  }
+  body main .contactPage .infoBlock .form form div input {
+    border: 0.1vw solid rgb(30, 30, 30);
+  }
+  body main .contactPage .infoBlock .form form div textarea {
+    border: 0.1vw solid rgb(30, 30, 30);
+  }
+  body main .contactPage .map iframe {
+    height: 50vh;
+  }
+  body main .navWaysForPost {
+    font-size: 4vw;
+  }
+  body main .navWaysForPost .breadcrumb .breadcrumb {
+    font-size: 4vw;
+  }
+  body main .navWays {
+    font-size: 4vw;
+  }
+  body main .navWays .breadcrumb .breadcrumb {
+    font-size: 4vw;
+  }
+  body main .postPage .postHead .name {
+    padding: 2vw;
+    font-size: 5vw;
+  }
+  body main .postPage .postHead .name p {
+    text-align: center;
+  }
+  body main .postPage .shareBlock {
+    font-size: 4vw;
+  }
+  body main .postPage .shareBlock .shareIn {
+    margin-top: 2vw;
+    -moz-column-gap: 6vw;
+         column-gap: 6vw;
+  }
+  body main .postPage .shareBlock .shareIn a {
+    font-size: 7vw;
+  }
+  body main .postPage .postBody {
+    font-size: 4vw;
   }
   body main .servicePage {
     flex-direction: column;
