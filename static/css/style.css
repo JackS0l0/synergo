@@ -1148,11 +1148,25 @@ body footer .floor0 {
   }
   body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody {
     font-size: 4vw;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
+  body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .line {
+    border: 0;
+    border-bottom: 0.5vw solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    margin: 2vw 0 1vw 0;
+  }
   body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .allServicesInModal {
-    display: none;
+    width: 100%;
+  }
+  body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .allServicesInModal .headerServieNames {
+    font-size: 5vw;
+    margin: 2vw 0 1vw 0;
+  }
+  body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .allServicesInModal .name a {
+    text-decoration: underline;
+    text-underline-offset: 1vw;
   }
   body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide {
     width: 100%;
@@ -1160,6 +1174,12 @@ body footer .floor0 {
   body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide .form form {
     justify-content: center;
     grid-template-columns: auto;
+  }
+  body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide .form form input {
+    border-radius: 1.5vw;
+  }
+  body main .servicePage .seeAllServices .modal .modal-dialog .modal-content .modal-body .modalsBody .formSide .form form textarea {
+    border-radius: 1.5vw;
   }
   body main .servicePage .seeAllServices .seeAllServicesModalBtn {
     width: 100%;

@@ -1346,10 +1346,26 @@ body{
                                 .modal-body{
                                     .modalsBody{
                                         font-size: 4vw;
-                                        flex-direction: column;
+                                        flex-direction: column-reverse;
                                         align-items: center;
+                                        .line{
+                                            border: 0;
+                                            border-bottom: 0.5vw solid rgba(255, 255, 255, 0.5);
+                                            width: 100%;
+                                            margin: 2vw 0 1vw 0;
+                                        }
                                         .allServicesInModal{
-                                            display: none;
+                                            .headerServieNames{
+                                                font-size: 5vw;
+                                                margin: 2vw 0 1vw 0;
+                                            }
+                                            .name{
+                                                a{
+                                                    text-decoration: underline;
+                                                    text-underline-offset: 1vw;
+                                                }
+                                            }
+                                            width: 100%;
                                         }
                                         .formSide{
                                             width: 100%;
@@ -1357,6 +1373,12 @@ body{
                                                 form{
                                                     justify-content: center;
                                                     grid-template-columns: auto;
+                                                    input{
+                                                        border-radius: 1.5vw;
+                                                    }
+                                                    textarea{
+                                                        border-radius: 1.5vw;
+                                                    }
                                                 }
                                             }
                                         }
