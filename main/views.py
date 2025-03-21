@@ -5,7 +5,7 @@ from django.conf import settings
 from urllib.parse import urlparse
 from django.contrib import messages
 from django.utils import translation
-from .models import Services,Projects,Resume,Vacancy,WhyWe
+from .models import Services,Projects,Resume,Vacancy,WhyWe,About
 from django.views.generic import DetailView
 from django.shortcuts import render,redirect
 from django.http import HttpResponseRedirect
@@ -136,3 +136,10 @@ def contact(request):
         'form':form,
     }
     return render(request,'contact.html',data)
+def about(request):
+    data={
+        'title':'Synergo - About',
+        'services':Services.objects.all().order_by('-date'),
+        'about':About.objects.all()[0:1],
+    }
+    return render(request,'about.html',data)

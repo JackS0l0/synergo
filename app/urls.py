@@ -14,6 +14,7 @@ urlpatterns = [
     path('faq/',mainviews.faqPage,name='faqpage'),
     path('vacancies/',mainviews.vacancy,name='jobpage'),
     path('contact/',mainviews.contact,name='contactpage'),
+    path('about/',mainviews.about,name='aboutpage'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns = [
     *i18n_patterns(*urlpatterns, prefix_default_language=False),

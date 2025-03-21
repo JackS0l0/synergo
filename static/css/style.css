@@ -512,6 +512,9 @@ body header .headerSlider div .info .btnsBox .goldenbtn {
 body main {
   min-height: 100vh;
 }
+body main .aboutUs {
+  margin: 2vw 5vw;
+}
 body main .contactPage {
   margin: 2vw 5vw;
 }

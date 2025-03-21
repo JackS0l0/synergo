@@ -4,7 +4,9 @@
 {% block main %}
     <main>
         <div class="aboutUs">
-            
+            {% for txt in about %}
+                <p>{{ txt.desc | safe }}</p>
+            {% endfor %}
         </div>
     </main>
 {% endblock %}

@@ -32,8 +32,8 @@
             <a href="{% url 'home' %}"><img src="https://res.cloudinary.com/dyjcv3dos/image/upload/f_auto,q_auto/bqv5avvudblp16w4uspp">Synergo</a>
         </div>
         <div class="menu">
-            <a href="#">{% trans 'Məqalələr' %}</a>
-            <a href="#">{% trans 'Layhiələr' %}</a>
+            <!-- <a href="#">{% trans 'Məqalələr' %}</a> -->
+            <!-- <a href="#">{% trans 'Layhiələr' %}</a> -->
             <div class="services">
                 <div class="dropdown">
                     <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Xidmətlər' %}</button>
@@ -44,7 +44,7 @@
                     </ul>
                 </div>
             </div>
-            <a href="#">{% trans 'Haqqımızda' %}</a>
+            <a href="{% url 'aboutpage' %}">{% trans 'Haqqımızda' %}</a>
             <a href="{% url 'contactpage' %}" class="btn goldenbtn">{% trans 'Əlaqə' %}</a>
         </div>
         <div class="menuForPhone">
@@ -75,8 +75,8 @@
                             <a href="{% url 'contactpage' %}">Bizimlə əlaqə</a>
                             <a href="{% url 'contactpage' %}">Korporativ satışlar</a>
                             <a href="{% url 'faqpage' %}">Şikayət və təkliflər</a>
-                            <a href="#">Şərtlərimiz</a>
-                            <a href="#">Haqqımızda</a>
+                            <!-- <a href="#">Şərtlərimiz</a> -->
+                            <a href="{% url 'aboutpage' %}">Haqqımızda</a>
                         </div>
                     </div>
                 </div>

@@ -67,3 +67,10 @@ class Vacancy(models.Model):
     class Meta:
         verbose_name = 'Vakansiya'
         verbose_name_plural = 'Vakansiyalar'
+class About(models.Model):
+    desc=RichTextField('Məzmun',default='none')
+    def __str__(self):
+        return f'Haqqımızda'
+    class Meta:
+        verbose_name = 'Haqqımızda'
+        verbose_name_plural = 'Haqqımızda'
