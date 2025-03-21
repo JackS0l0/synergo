@@ -485,8 +485,6 @@ body header .headerSlider div .img img {
   height: 83vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
   filter: brightness(50%);
 }
 body header .headerSlider div .info {
