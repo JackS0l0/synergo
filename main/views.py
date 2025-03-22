@@ -5,7 +5,7 @@ from django.conf import settings
 from urllib.parse import urlparse
 from django.contrib import messages
 from django.utils import translation
-from .models import Services,Projects,Resume,Vacancy,WhyWe,About
+from .models import Services,Projects,Resume,Vacancy,WhyWe,About,Blog
 from django.views.generic import DetailView
 from django.shortcuts import render,redirect
 from django.http import HttpResponseRedirect
@@ -49,6 +49,7 @@ def index(request):
         'services':Services.objects.all().order_by('-date'),
         'servicesInMain':Services.objects.all().order_by('-date')[0:6],
         'projects':Projects.objects.all().order_by('-date')[0:8],
+        'blog':Blog.objects.all().order_by('-date')[0:8],
         'whyWe':WhyWe.objects.all().order_by('-date')[0:5],
     }
     return render(request, 'index.html', data)
@@ -58,6 +59,15 @@ class ServiceDetail(DetailView):
     context_object_name = 'service'
     def get_context_data(self, **kwargs):
         data=super(ServiceDetail,self).get_context_data(**kwargs)
+        data['services']=Services.objects.all().order_by('-date')
+        data['title']=self.object.name
+        return data
+class BlogDetail(DetailView):
+    model = Blog
+    template_name = 'post.html'
+    context_object_name = 'article'
+    def get_context_data(self, **kwargs):
+        data=super(BlogDetail,self).get_context_data(**kwargs)
         data['services']=Services.objects.all().order_by('-date')
         data['title']=self.object.name
         return data

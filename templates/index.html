@@ -139,5 +139,24 @@
                 {% endfor %}
             </div>
         {% endif %}
+        {% if blog %}
+            <div class="partHead">
+                <h1>{% trans 'Məqalələr' %}</h1>
+            </div>
+            <div class="projectsPage">
+                {% for article in blog %}
+                    <div class="project">
+                        <a href="{% url 'blogdetail' article.slug %}">
+                            <div class="img">
+                                <img src="{{article.img}}" alt="">
+                            </div>
+                            <div class="info">
+                                <p>{{article.name}}</p>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
     </main>
 {% endblock %}

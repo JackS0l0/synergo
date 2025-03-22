@@ -74,3 +74,14 @@ class About(models.Model):
     class Meta:
         verbose_name = 'Haqqımızda'
         verbose_name_plural = 'Haqqımızda'
+class Blog(models.Model):
+    name=models.CharField('Xidmətin adı',max_length=200,default='none')
+    desc=RichTextField('Məzmun',default='none')
+    img=models.URLField('Şəkil',default='none')
+    date=models.DateTimeField('Tarix',default=timezone.now)
+    slug=models.SlugField('Slug',default='none')
+    def __str__(self):
+        return self.name
+    class Meta:
+        verbose_name = 'Article'
+        verbose_name_plural = 'Blog'

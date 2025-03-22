@@ -11,6 +11,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',mainviews.index,name='home'),
     path('service/<str:slug>/',mainviews.ServiceDetail.as_view(),name='servicedetail'),
+    path('blog/<str:slug>/',mainviews.BlogDetail.as_view(),name='blogdetail'),
     path('faq/',mainviews.faqPage,name='faqpage'),
     path('vacancies/',mainviews.vacancy,name='jobpage'),
     path('contact/',mainviews.contact,name='contactpage'),
