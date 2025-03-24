@@ -85,3 +85,10 @@ class Blog(models.Model):
     class Meta:
         verbose_name = 'Article'
         verbose_name_plural = 'Blog'
+class ContactInfo(models.Model):
+    txt=RichTextField('Əlaqə məlumatları',default='none')
+    def __str__(self):
+        return f'Əlaqə məlumatları'
+    class Meta:
+        verbose_name = 'Əlaqə məlumatları'
+        verbose_name_plural = 'Əlaqə məlumatları'

@@ -5,7 +5,7 @@ from django.conf import settings
 from urllib.parse import urlparse
 from django.contrib import messages
 from django.utils import translation
-from .models import Services,Projects,Resume,Vacancy,WhyWe,About,Blog
+from .models import Services,Projects,Resume,Vacancy,WhyWe,About,Blog,ContactInfo
 from django.views.generic import DetailView
 from django.shortcuts import render,redirect
 from django.http import HttpResponseRedirect
@@ -144,6 +144,7 @@ def contact(request):
         'title':'Synergo - Contact',
         'services':Services.objects.all().order_by('-date'),
         'form':form,
+        'contact':ContactInfo.objects.all()[0:1],
     }
     return render(request,'contact.html',data)
 def about(request):
@@ -153,3 +154,9 @@ def about(request):
         'about':About.objects.all()[0:1],
     }
     return render(request,'about.html',data)
+def custom_404(request, exception):
+    data={
+        'title':'Synergo - Not Found',
+    }
+    return render(request, '404.html', data ,status=404)
+handler404 = custom_404

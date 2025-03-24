@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block main %}
+    <main>
+        <div class="errorPage">
+            <div class="txt">
+                <p>{% trans 'Səhifə tapılmadı' %}</p>
+            </div>
+            <div class="img">
+                <img src="https://res.cloudinary.com/dyjcv3dos/image/upload/f_auto,q_auto/u6rqkbox2fcd4lvoevaf">
+            </div>
+            <div class="txt">
+                <a href="{% url 'home' %}" class="btn btn-warning">{% trans 'Əsas səhifəyə geri dön' %}</a>
+            </div>
+        </div>
+    </main>
+{% endblock %}

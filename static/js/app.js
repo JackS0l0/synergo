@@ -2,17 +2,32 @@
 document.addEventListener("DOMContentLoaded", function () {
     let desktopSwitch = document.getElementById("filter-desktop");
     let mobileSwitch = document.getElementById("filter-mobile");
+
+    // Yadda saxlanmış rejimi yoxlayırıq
+    let darkMode = localStorage.getItem("dark-mode") === "enabled";
+
+    // Switch-ləri və body class-ı uyğun vəziyyətə gətiririk
+    desktopSwitch.checked = darkMode;
+    mobileSwitch.checked = darkMode;
+    document.body.classList.toggle("dark-mode", darkMode);
+
     function syncSwitches(source, target) {
         target.checked = source.checked;
         document.body.classList.toggle("dark-mode", source.checked);
+
+        // Dark mode rejimini yadda saxlayırıq
+        localStorage.setItem("dark-mode", source.checked ? "enabled" : "disabled");
     }
+
     desktopSwitch.addEventListener("change", function () {
         syncSwitches(desktopSwitch, mobileSwitch);
     });
+
     mobileSwitch.addEventListener("change", function () {
         syncSwitches(mobileSwitch, desktopSwitch);
     });
 });
+
 // headerSlider
 $('.headerSlider').slick({
     slidesToShow: 1,

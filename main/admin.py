@@ -1,8 +1,20 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
-from .models import ContactMessage,Services,Projects,WhyWe,Resume,Vacancy,About,Blog
+from .models import ContactMessage,Services,Projects,WhyWe,Resume,Vacancy,About,Blog,ContactInfo
 from import_export.admin import ExportMixin
 from import_export import resources
+@admin.register(ContactInfo)
+class ContactInfoControl(TranslationAdmin):
+    group_fieldsets = True  
+    class Media:
+        js = (
+            'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
+            'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js',
+            'modeltranslation/js/tabbed_translation_fields.js',
+        )
+        css = {
+            'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
+        }
 @admin.register(About)
 class AboutControl(TranslationAdmin):
     group_fieldsets = True  

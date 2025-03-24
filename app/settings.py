@@ -3,11 +3,11 @@ from dotenv import load_dotenv
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1hpr^lgy6pp-n4-u-dko(96_f(@-(vr+@417bh3l2y+b2a*pa*'
-DEBUG = True
-ALLOWED_HOSTS = ["*","vercel.app"]
+DEBUG = False
+ALLOWED_HOSTS = ["synergo.az","https://synergo.az"]
 INSTALLED_APPS = [
-    'jazzmin',
     'modeltranslation',
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from django.views.static import serve
 from main import views as mainviews
 from django.conf.urls.i18n import i18n_patterns
+handler404 = mainviews.custom_404
 urlpatterns = [
     re_path(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
     re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),

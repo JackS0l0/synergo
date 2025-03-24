@@ -1,6 +1,6 @@
 from django.contrib import admin
 from modeltranslation.translator import TranslationOptions,register
-from .models import Services,Projects,WhyWe,Vacancy,About,Blog
+from .models import Services,Projects,WhyWe,Vacancy,About,Blog,ContactInfo
 @register(About)
 class AboutTranslationOptions(TranslationOptions):
     fields = ['desc']
@@ -19,3 +19,6 @@ class VacancyTranslationOptions(TranslationOptions):
 @register(Blog)
 class BlogTranslationOptions(TranslationOptions):
     fields = ['name','desc']
+@register(ContactInfo)
+class ContactInfoTranslationOptions(TranslationOptions):
+    fields = ['txt']
